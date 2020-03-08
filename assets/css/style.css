@@ -9,6 +9,84 @@
 # General
 --------------------------------------------------------------*/
 
+.gallery {
+  margin: 10px 50px;
+}
+.gallery img {
+  transition: 1s;
+  padding: 15px;
+  width: 200px;
+}
+.gallery img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+body {
+  background-color: #0a0a0a;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgb(17, 16, 16);
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 .column {
   float: left;
   width: 33.33%;
@@ -1394,10 +1472,10 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #68A4C4;
+  color: rgb(253, 254, 255);
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #a2cce3;
+  border: 2px dotted #0a0a0a;
 }
 
 .contact .info-box h3 {
@@ -1430,7 +1508,7 @@ section {
 
 .contact .php-email-form .error-message {
   display: none;
-  color: #fff;
+  color: rgb(7, 7, 7);
   background: #ed3c0d;
   text-align: center;
   padding: 15px;
@@ -1439,7 +1517,7 @@ section {
 
 .contact .php-email-form .sent-message {
   display: none;
-  color: #fff;
+  color: rgb(0, 0, 0);
   background: #18d26e;
   text-align: center;
   padding: 15px;
@@ -1448,7 +1526,7 @@ section {
 
 .contact .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: rgb(0, 0, 0);
   text-align: center;
   padding: 15px;
 }
@@ -1473,7 +1551,7 @@ section {
 }
 
 .contact .php-email-form input::focus, .contact .php-email-form textarea::focus {
-  background-color: #68A4C4;
+  background-color: rgb(171, 179, 184);
 }
 
 .contact .php-email-form input {
@@ -1485,7 +1563,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #68A4C4;
+  background: rgb(110, 108, 108);
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1493,7 +1571,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #8dbad2;
+  background: #101111;
 }
 
 @-webkit-keyframes animate-loading {
